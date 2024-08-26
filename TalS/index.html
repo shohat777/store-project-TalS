@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- store's header -->
+    <h1>Tal's store</h1>
+
+    <!-- store's NavBar -->
+    <div class="navBar">
+        <ul>
+            <li><button class="navButton" onclick="renderHome(products)">Home</button></li>
+            <li><button class="navButton" onclick="">Categories</button></li>
+            <li><button class="navButton" onclick="renderMyCart(userCart)">My Cart</button></li>
+            <li><button class="navButton" onclick="">Sign In</button></li>
+        </ul>
+    </div>
+
+    <!-- products container -->
+    <div id="productContainer"></div>
+
+    <!-- cart Page -->
+    <div id="userCart"></div>
+
+    <script src="./dist/index.js">
+        document.addEventListener("DOMContentLoaded", () => {
+            renderHome(products);
+        });
+    </script>
+</body>
+
+</html>
